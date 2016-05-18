@@ -1,0 +1,11 @@
+<h2>Shoos Orders</h2>
+
+<% @preorder.each do |preorder| %>
+  <b>Name:</b>
+  <p><%= preorder.full_name() %></p>
+
+  <b>Order</b>
+  <p><%= preorder.quantity %> x <%= preorder.size %></p>
+  <hr>
+
+<% end %>
